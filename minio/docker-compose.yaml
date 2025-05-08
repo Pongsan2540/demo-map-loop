@@ -1,0 +1,28 @@
+services:
+  minio:
+    image: minio/minio
+    volumes:
+      - ./data:/data
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      - 9101:9101
+      - 9100:9100
+    environment:
+      MINIO_ROOT_USER: admin
+      MINIO_ROOT_PASSWORD: P@ssw0rd
+      MINIO_BROWSER_REDIRECT_URL: "http://192.168.1.21:9101" #Console
+      MINIO_SERVER_URL: "http://192.168.1.21:9100" # API
+    command: server /data --address ":9100" --console-address ":9101"
+    restart: always
+    networks:
+      - minio
+      
+      
+      
+
+networks:
+  minio:
+    driver: bridge
+
+volumes:
+  minio_data:

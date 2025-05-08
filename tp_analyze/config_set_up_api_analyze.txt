@@ -1,0 +1,14 @@
+[parameters-set-up]
+api_url=0.0.0.0
+port=5004
+list_model=paraphrase-MiniLM-L6-v2,Salesforce/blip-image-captioning-base,yolov8n.pt
+save_img=0
+type_analsze=1
+folder_name=output
+method_analyze=method_loop1
+file_name_config=config_set_up_api_analyze.txt
+
+[send-status]
+url_leader=0.0.0.0
+port_leader=5016
+

@@ -1,0 +1,5 @@
+[config-method]
+list_model=Unet_belly_meat.pt,Unet_belly_remove_bg.pt,sam_vit_b_01ec64.pth
+type_analsze=2
+method_analyze=method_belly
+

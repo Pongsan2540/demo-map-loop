@@ -1,0 +1,6 @@
+[main-bypass]
+by_pass_status=True
+by_pass_url=192.168.1.50
+by_pass_port=5005
+by_pass_name=result
+

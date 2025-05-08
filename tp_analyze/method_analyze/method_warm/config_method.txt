@@ -1,0 +1,6 @@
+[config-method]
+list_model=warm_class4_UNET2_20240124.pt,warm_class1_UNET2_20240124.pt,sam_vit_b_01ec64.pth
+type_analsze=3
+method_analyze=method_warm
+one_plxel_one_mm=1.09375
+

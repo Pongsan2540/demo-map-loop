@@ -1,0 +1,6 @@
+[config-method]
+list_model=paraphrase-MiniLM-L6-v2,Salesforce/blip-image-captioning-base,yolov8n.pt
+type_analsze=1
+method_analyze=method_loop1
+one_plxel_one_mm=1.09375
+
